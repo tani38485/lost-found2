@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lost & Found Portal</h1>
+
+        <div class="tabs">
+            <button class="tab-button active" data-tab-id="viewItems">View Items</button>
+            <!-- แท็บนี้จะแค่เปิดลิงก์ Google Form -->
+            <button class="tab-button" data-tab-id="postItem">Post New Item</button>
+        </div>
+
+        <!-- View Items Tab -->
+        <div id="viewItems" class="tab-content active">
+            <h2>Items Reported</h2>
+            <div id="items-list" class="items-grid">
+                <!-- Items will be loaded here by JavaScript -->
+                <p>Loading items...</p>
+            </div>
+        </div>
+
+        <!-- Post New Item Tab -->
+        <div id="postItem" class="tab-content">
+            <!-- เนื้อหาในแท็บนี้จะแสดงขึ้นมา แต่ไม่มีฟอร์มให้กรอก เพราะจะเปิดลิงก์แทน -->
+            <h2>Post a New Item</h2>
+            <p>Please use the Google Form to submit a new item.</p>
+            <p>Clicking "Post New Item" will open the form in a new tab.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
